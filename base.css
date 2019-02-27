@@ -1,3 +1,5 @@
+/* about-img img is wrong. Theres more detail in the original */
+
 body {
 	background-color: rgba(242, 242, 243, 1);
   width: 100%;
@@ -19,6 +21,7 @@ h1, h2, h3 {
 .circle-group {
   display: flex;
   padding-bottom: 5%;
+  position: relative;
 }
 .circle {
   height: 25px;
@@ -49,6 +52,18 @@ h1, h2, h3 {
   color: #58595B;
   font-family: Open+Sans;
   font-size: 20px;
+  z-index: 1;
+}
+/*.what-title {
+  position: relative;
+  border: 1px solid blue;
+}*/
+.about-img {
+  height: 50%;
+  width: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .content-section {
   height: 100%;
@@ -56,6 +71,9 @@ h1, h2, h3 {
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
+  overflow: hidden;
+
+  position: relative;
 }
 #about {
 	background-color: white;
@@ -69,11 +87,13 @@ h1, h2, h3 {
 	border-color: rgba(1, 1, 1, 0);
 }
 .nav-title {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   background-color: rgba(1, 1, 1, 0);
   border-width: 1px;
   border-color: rgba(1, 1, 1, 0);
   color: #8DA9D4;
-  height: 30px;
+  height: auto;
   margin-top: 30px;
   font-size: 25px;
   margin-right: 10px;
@@ -82,6 +102,9 @@ h1, h2, h3 {
   font-weight: 50px;
   font-size: 40px;
   padding: 5px;
+}
+.nav-title:hover {
+  color: white;
 }
 .apply-button {
   -webkit-transition-duration: 0.4s; /* Safari */

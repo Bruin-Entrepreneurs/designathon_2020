@@ -6,10 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
 <body>
-	<div class="section" id="#splash">
-		<div class="flex-container"> 
-			<button class="nav-title">about</h1>
-			<button class="nav-title">faq</h1>
+	<!-- WHY DOES THE FOLLOWING DIV'S ID HAVE A HASHTAG IN IT? -->
+	<div class="section">
+		<div class="flex-container navbar"> 
+			<a class="nav-link" href="about"> <button class="nav-title">about</h1> </button> </a>
+			<a class="nav-link" href="faq"> <button class="nav-title">faq</h1> </button> </a>
 			<button type="button" class="apply-button">apply here</button>
 		</div>
 		<div class="img">
@@ -17,6 +18,7 @@
 		</div>
 	</div> 
 	<div class="content-section" id="about">
+		<img class="about-img" src="./path.png" width="20%" height="40%" />
 		<h1 class="section-title"> about </h1>
 		<h3 class="about-text"> Designathon is a beginner-friendly, human-centered design competition hosted by Bruin Entrepreneurs with the goal of fostering design thinking at UCLA. </h3>
 		<div class="circle-group">
@@ -37,10 +39,10 @@
 			<div class="circle"></div>
 			<div class="circle"></div>
 		</div>
-		<h1> what is design thinking? </h1>
+		<h1> what is design thinking? 
+		</h1>
 		<div style="display: flex;">
 		<h3 class="about-text"> According to <span style="color: #83A2D4"> IDEO</span>, design thinking utilizes elements from the designer's toolkit like empathy and experimentation to arrive at innovative solutions. </h3>
-		<img src="./path.png" width="20%" height="40%" />
 		</div>
 	</div>
 	<div class="content-section" id="#faq">
