@@ -1,5 +1,7 @@
 /* about-img img is wrong. Theres more detail in the original */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
 	background-color: rgba(242, 242, 243, 1);
   width: 100%;
@@ -13,10 +15,61 @@ h1, h2, h3 {
 }
 .flex-container {
 	display: flex;
-	width: 100%;
 	margin-right: 5%;
 	width: 90%;
 	margin-left: 5%;
+}
+.home {
+  flex-direction: column;
+  position: relative;
+}
+.home-img {
+  height: 80%;
+  margin-bottom: 1rem;
+  width: auto;
+  background-image: url("splash.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.navbar {
+  align-items: center;
+  margin-top: 1rem;
+}
+.nav-title {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: transparent;
+  border: 0;
+  color: #8DA9D4;
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: Comfortaa; 
+  font-weight: 50px;
+  font-size: 40px;
+  padding: 5px;
+}
+.nav-title:hover {
+  color: white;
+}
+.apply-button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: rgba(1, 1, 1, 0);
+  border-color: #8DA9D4;
+  color: #8DA9D4;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-width: 3px;
+  border-radius: 35%;
+  font-family: Comfortaa;
+  font-size: 25px;
+  margin-left: auto;
+}
+
+.apply-button:hover {
+  background-color: #8DA9D4; /* Green */
+  color: white;
 }
 .circle-group {
   display: flex;
@@ -54,10 +107,6 @@ h1, h2, h3 {
   font-size: 20px;
   z-index: 1;
 }
-/*.what-title {
-  position: relative;
-  border: 1px solid blue;
-}*/
 .about-img {
   height: 50%;
   width: auto;
@@ -77,54 +126,6 @@ h1, h2, h3 {
 }
 #about {
 	background-color: white;
-}
-.img {
-	text-align: center;
-}
-.splash {
-	height: 90%; 
-	width: 80%;
-	border-color: rgba(1, 1, 1, 0);
-}
-.nav-title {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  background-color: rgba(1, 1, 1, 0);
-  border-width: 1px;
-  border-color: rgba(1, 1, 1, 0);
-  color: #8DA9D4;
-  height: auto;
-  margin-top: 30px;
-  font-size: 25px;
-  margin-right: 10px;
-  margin-left: 10px;
-  font-family: Comfortaa; 
-  font-weight: 50px;
-  font-size: 40px;
-  padding: 5px;
-}
-.nav-title:hover {
-  color: white;
-}
-.apply-button {
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  background-color: rgba(1, 1, 1, 0);
-  border-color: #8DA9D4;
-  color: #8DA9D4;
-  height: 50px;
-  width: 200px;
-  border-width: 3px;
-  border-radius: 35%;
-  font-family: Comfortaa;
-  margin-top: 30px;
-  font-size: 25px;
-  margin-left: auto;
-}
-
-.apply-button:hover {
-  background-color: #8DA9D4; /* Green */
-  color: white;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -158,5 +159,9 @@ h1, h2, h3 {
     transition: max-height 0.2s ease-out;
     padding-right: 10%;
     padding-left: 18px;
+}
 
+@media (max-width: 40rem) {
+.home-img {
+  background-image: url("splash2.png"); 
 }
