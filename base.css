@@ -68,7 +68,7 @@ h1, h2, h3 {
 }
 
 .apply-button:hover {
-  background-color: #8DA9D4; /* Green */
+  background-color: #8DA9D4; 
   color: white;
 }
 .circle-group {
@@ -140,11 +140,23 @@ h1, h2, h3 {
   margin-left: 0;
   border: none;
   outline: none;
-  font-family: Open+Sans;
-  font-size: 20px;
+  font-family: Karla;
+  font-size: 24px;
   transition: 0.4s;
 }
-
+.text-link {
+  text-decoration: none;
+  color: #8DA9D4;
+}
+.text-link-apply {
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  color: #8DA9D4;
+}
+.text-link-apply:hover {
+  color: white;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
@@ -153,13 +165,14 @@ h1, h2, h3 {
 /* Style the accordion panel. Note: hidden by default */
 .panel {
 /*  padding: 0 18px;
-*/  background-color: rgba(0, 0, 0, 0);
+*/  background-color: white;
   max-height: 0; 
   overflow: scroll;
-  font-family: Open+Sans;
+  font-family: Karla;
+  font-size: 20px;
     transition: max-height 0.2s ease-out;
-    padding-right: 10%;
-    padding-left: 18px;
+    padding-right: 15%;
+    padding-left: 5%;
 }
 
 @media (max-width: 40rem) {

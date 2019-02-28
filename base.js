@@ -11,3 +11,8 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 	}); 
 }
+
+
+$(window).scroll(function(){
+    $(".content-section").css("opacity", 1 - $(window).scrollTop() / 5);
+  });
