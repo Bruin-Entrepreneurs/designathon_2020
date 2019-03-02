@@ -170,6 +170,7 @@ h1, h2, h3 {
   overflow: scroll;
   font-family: Karla;
   font-size: 20px;
+  color: rgba(88, 89, 91, 1);
     transition: max-height 0.2s ease-out;
     padding-right: 15%;
     padding-left: 5%;
