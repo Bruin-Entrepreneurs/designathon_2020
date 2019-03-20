@@ -105,11 +105,14 @@ function initOneDiv(i) {
   
   document.getElementById("circleHolder").appendChild(iDiv);
 
-  var fintrans = Math.floor((Math.random() * 720));
-  if(fintrans > 360) {
-    fintrans = (fintrans - 360) * -1;
+  var finaltrans = Math.floor((Math.random() * 720));
+  if(finaltrans > 360) {
+    finaltrans = (finaltrans * -1) + 160;
   }
-  var n = new Circ(l, t, w, h, 0, fintrans);
+  else {
+    finaltrans = finaltrans + 200;
+  }
+  var n = new Circ(l, t, w, h, 0, finaltrans);
   arr.push(n);
   go(i);
 }
@@ -337,7 +340,10 @@ function go(i) {
 
   var finaltrans = Math.floor((Math.random() * 720));
   if(finaltrans > 360) {
-    finaltrans = (finaltrans - 360) * -1;
+    finaltrans = (finaltrans * -1) + 160;
+  }
+  else {
+    finaltrans = finaltrans + 200;
   }
   arr[i].finaltrans = finaltrans;
 
