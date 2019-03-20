@@ -42,7 +42,6 @@ h1, h2, h3 {
   background-color: transparent;
   border: 0;
   color: #8DA9D4;
-  font-size: 25px;
   margin-right: 10px;
   margin-left: 10px;
   font-family: Comfortaa; 
@@ -53,6 +52,9 @@ h1, h2, h3 {
 .nav-title:hover {
   color: white;
 }
+.nav-link {
+  text-decoration: none;
+}
 .apply-button {
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -60,11 +62,15 @@ h1, h2, h3 {
   border-color: #8DA9D4;
   color: #8DA9D4;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  border-width: 3px;
-  border-radius: 35%;
   font-family: Comfortaa;
   font-size: 25px;
   margin-left: auto;
+
+  border-width: 3px;
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
 }
 
 .apply-button:hover {
@@ -104,24 +110,13 @@ h1, h2, h3 {
   margin-top: 1%;
   padding-left: 6%;
 }
-@media (max-width: 40rem) {
-  .circle-lines {
-    width: 50%;
-  }
-}
+
 .about-text {
   margin-right: 15%;
   color: #58595B;
   font-family: Open+Sans;
   font-size: 20px;
   z-index: 1;
-}
-.about-img {
-  height: 50%;
-  width: auto;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 .content-section {
   height: 100%;
@@ -130,12 +125,26 @@ h1, h2, h3 {
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
   position: relative;
 }
 #about {
 	background-color: white;
+  height: auto;
+}
+
+#about > * {
+  z-index: 1;
+}
+
+.about-img {
+  height: 50%;
+  width: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -186,7 +195,29 @@ h1, h2, h3 {
 }
 
 @media (max-width: 40rem) {
+  .navbar {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .apply-button {
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+  .nav-title {
+    font-size: 25px;
+  }
+  .circle-lines {
+    width: 50%;
+  }
   .home-img {
-    background-image: url("splash2.png"); 
+    background-image: url("splash21.png"); 
+  }
+  .about-img {
+    display: none;
   }
 }

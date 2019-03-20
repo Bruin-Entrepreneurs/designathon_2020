@@ -1,16 +1,21 @@
 <html>
 <head>
-	<title>Designathon</title>	
+	<title>Designathon</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="base.css" type="text/css" /> 
 	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" type="text/css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no" />
 </head>
 <body>
 	<div class="home flex-container">
 		<div class="flex-container navbar"> 
-			<a class="nav-link" href="#about"> <button class="nav-title">about</h1> </button> </a>
-			<a class="nav-link" href="#faq"> <button class="nav-title">faq</h1> </button> </a>
+			<div >
+				<a class="nav-link" href="#about"> <button class="nav-title">about</h1> </button> </a>
+				<a class="nav-link" href="#faq"> <button class="nav-title">faq</h1> </button> </a>
+			</div>
 			<button type="button" class="apply-button"><a href="tinyurl.com/designathon19" class="text-link-apply">apply here</a></button>
 		</div>
 		<div class="home-img"> </div>
@@ -40,10 +45,10 @@
 			<div class="circle"></div> -->
 			<img class="circle-lines" src="./Circles-3.svg" />
 		</div>
-		<h1> what is design thinking? 
-		</h1>
-		<div style="display: flex;">
-		<h3 class="about-text"> According to <span style="color: #83A2D4"> IDEO</span>, design thinking utilizes elements from the designer's toolkit like empathy and experimentation to arrive at innovative solutions. </h3>
+		<div style="display: flex; flex-direction: column;">
+			<h1 style="z-index: 1;"> what is design thinking? 
+			</h1>
+			<h3 class="about-text"> According to <span style="color: #83A2D4"> IDEO</span>, design thinking utilizes elements from the designer's toolkit like empathy and experimentation to arrive at innovative solutions. </h3>
 		</div>
 	</div>
 	<div id="faq" class="content-section">
@@ -71,7 +76,7 @@
 			<div class="panel">
 				<p> Don’t worry too much on your part as an attendee! We will tailor a curriculum through our Bruin Entrepreneurs Facebook page with plenty of articles and Medium content produced by our team members to prepare you for the day.  </p>
 			</div>
-			<button class="accordion"> What should I bring </button>
+			<button class="accordion"> What should I bring? </button>
 			<div class="panel">
 				<p> Bring your Bruin photo ID or any state-issued ID to check in to the event.  </p>
 			</div>
@@ -80,6 +85,8 @@
 				<p> We will be bringing in industry experts as speakers and to host workshops, and you have the opportunity to network with any of these people. Additionally, there will be companies who will set up tables for the purpose of recruiting, so feel free to bring your resume and portfolio!   </p>
 			</div>
 		</div>
+		<br />
+		<br />
 	</div>
 <script src="base.js"></script>
 </body>
