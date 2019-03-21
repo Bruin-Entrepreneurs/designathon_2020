@@ -41,7 +41,7 @@ function init_minis() {
   var circ = $("#circleHolder");
   var offset = circ.offset();
 
-  for(var i = 0; i < 5; i++)
+  for(var i = 0; i < 6; i++)
   {
     initOneDiv(i);
   }
@@ -58,19 +58,15 @@ var starttime;
 function initOneDiv(i) {
   var circ = $("#circleHolder");
   var iDiv = document.createElement('div');
-  var randie3 = Math.random()*3;
-  var classNameForDiv = "splashh";
-  if(randie3 < 1) {
-    classNameForDiv = "splashh splash1";
+  if(i < 2) {
+    iDiv.className = "splashh splash1";
   }
-  else if(randie3 < 2) {
-    classNameForDiv = "splashh splash2";
+  else if(i < 4) {
+    iDiv.className = "splashh splash2";
   }
   else {
-    classNameForDiv = "splashh splash3";
+    iDiv.className = "splashh splash3";
   }
-
-  iDiv.className = classNameForDiv;
 
   //opacity
   var o = Math.floor(Math.random()*60);
