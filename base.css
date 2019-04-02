@@ -101,6 +101,7 @@ h1, h2, h3 {
   /*transition: ease-in-out 10s;*/
   transform: rotate(0deg);
 }
+
 .home-img {
   height: 80%;
   width: 100%;
@@ -265,4 +266,21 @@ h1, h2, h3 {
   .about-img {
     display: none;
   }
+}
+.hoverTable{
+  width:50%; 
+  border-collapse:collapse; 
+  height:100px;
+  font-family: Comfortaa; 
+  font-size: 24px;
+}
+.hoverTable td{ 
+  padding:20px; border:black 1px solid;
+}
+
+.hoverTable tr:hover {
+  background-color: #C6D3E7;
+}
+.table_time {
+  color: #83A2D4;
 }
