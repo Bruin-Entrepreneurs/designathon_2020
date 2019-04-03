@@ -84,7 +84,7 @@ h1, h2, h3 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("redef1.png"); 
+  background-image: url("redef1transparent.png"); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
