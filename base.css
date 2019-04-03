@@ -205,19 +205,26 @@ h4, p {
 }
 
 #speakers-flex {
+  flex-wrap: wrap;
   margin-left: 0;
+  padding: 0 5%;
   margin-bottom: 15%;
+  /*min-width: 30em;*/
 }
 
 #speaker-card {
-  height: 25%;
-  width: 25%;
+  /*margin: 5% 5%;*/
+  padding: 1em 1em;
+  height: auto;
+  width: auto;
   text-align: center;
 }
 
 .speaker-pics {
-  height: 80%;
-  width: 80%;
+/*  height: 80%;
+  width: 80%;*/
+  height: 10em;
+  width: 10em;
 }
 
 #speaker-name {
