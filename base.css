@@ -170,8 +170,6 @@ h1, h2, h3 {
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
-  /*overflow: hidden;*/
-
   position: relative;
 }
 #about {
@@ -238,6 +236,27 @@ h1, h2, h3 {
     padding-right: 15%;
     padding-left: 5%;
 }
+
+#sponsors {
+  height: auto;
+  min-height: 15rem;
+  justify-content: center;
+}
+
+.sponsorsflex {
+  margin: 0;
+  flex-wrap: wrap;
+  /*display: flex;*/
+  display: block;
+}
+
+.sponsorimg {
+  width: 40%;
+  height: auto;
+  margin: 1rem;
+  max-width: 20rem;
+}
+
 
 @media (max-width: 40rem) {
   .navbar {
