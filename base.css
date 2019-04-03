@@ -267,6 +267,48 @@ h1, h2, h3 {
   height: 10em;
   width: 10em;
 }
+.speaker-pic-container {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Text display on hover */
+.speaker-pics:hover {
+  opacity: .6;
+}
+.speaker_hover_text_title {
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  display: none;
+}
+.speaker_hover_text {
+  position: absolute;
+  top: 40%;
+  display: none;
+}
+.speaker-pics:hover ~ .speaker_hover_text{
+  display: block;
+}
+.speaker-pics:hover ~ .speaker_hover_text_title{
+  display: block;
+}
+.speaker_hover_text:hover {
+  display: block;
+}
+.speaker_hover_text_title:hover {
+  display: block;
+}
+.speaker_hover_text_title:hover ~ .speaker_hover_text{
+  display: block;
+}
+.speaker_hover_text:hover ~ .speaker_hover_text_title{
+  display: block;
+}
+
+
+
 
 #speaker-name {
   margin-bottom: .1em;
