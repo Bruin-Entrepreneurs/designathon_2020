@@ -19,7 +19,35 @@ h1, h2, h3 {
 	width: 90%;
 	margin-left: 5%;
 }
+.schedule_wrapper {
+  height: 80%;
+  margin-top: 3%;
+  width: 50%;
+  overflow: auto;
+}
+.schedule_wrapper::-webkit-scrollbar {
+    width: 39px;
+    padding-top: 5%;
+}
+ 
+/* Track */
+.schedule_wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 
+}
+ 
+/* Handle */
+.schedule_wrapper::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.schedule_wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 .navbar {
   align-items: center;
   margin-top: 1rem;
@@ -172,7 +200,6 @@ h1, h2, h3 {
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
-  /*overflow: hidden;*/
 
   position: relative;
 }
@@ -268,12 +295,11 @@ h1, h2, h3 {
     display: none;
   }
 }
-.hoverTable{
-  width:50%; 
+.hoverTable {
   border-collapse:collapse; 
-  height:100px;
   font-family: Comfortaa; 
   font-size: 24px;
+  height: 10%;
 }
 .hoverTable td{ 
   padding:20px; border:black 1px solid;
@@ -284,4 +310,8 @@ h1, h2, h3 {
 }
 .table_time {
   color: #83A2D4;
+}
+
+#faq {
+  background-color: white;
 }
