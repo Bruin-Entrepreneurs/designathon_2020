@@ -13,6 +13,17 @@ h1, h2, h3 {
   font-family: Comfortaa; 
     color: #8DA9D4;
 }
+
+.schedule_content_div {
+  margin-top: 3%;
+  position: absolute;
+  margin-left: 5%; 
+  margin-right: 10%; 
+}
+.schedule_text {
+  font-family: Comfortaa;
+  color: #58595B;
+}
 .flex-container {
 	display: flex;
 	margin-right: 5%;
