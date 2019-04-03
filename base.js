@@ -18,11 +18,7 @@ var third_acc = document.getElementsByClassName("schedule_content_div")
 var k;
 function handler_create ( param ) {
   return function() {
-    console.log("in");
-    console.log("param", param);
     var next_div = third_acc[param]
-    console.log(param);
-    console.log(next_div, "Here's the div");
     if (next_div.style.display == 'none') {
       next_div.style.display = '';
     } else {
