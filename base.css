@@ -24,6 +24,11 @@ h1, h2, h3 {
   font-family: Comfortaa;
   color: #58595B;
 }
+ h4, p {
+  font-family: Open Sans;
+  color: #58595B;
+  font-weight: 100;
+}
 .flex-container {
 	display: flex;
 	margin-right: 5%;
@@ -232,6 +237,51 @@ h1, h2, h3 {
   z-index: 0;
 }
 
+#speakers {
+  background-color: white;
+  height: auto;
+  min-height: auto;
+
+}
+
+#speakers-flex {
+  flex-wrap: wrap;
+  margin-left: 0;
+/*  padding: 0 5%;
+*/  margin-bottom: 15%;
+  justify-content: space-around;
+  /*min-width: 30em;*/
+}
+
+#speaker-card {
+  /*margin: 5% 5%;*/
+  padding: 1em 1em;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+.speaker-pics {
+/*  height: 80%;
+  width: 80%;*/
+  height: 10em;
+  width: 10em;
+}
+
+#speaker-name {
+  margin-bottom: .1em;
+}
+
+.speak-pos {
+  font-weight: 100;
+  margin: 0 auto;
+}
+
+.speak-org {
+  font-weight: 900;
+  margin: 0 auto;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
@@ -321,8 +371,4 @@ h1, h2, h3 {
 }
 .table_time {
   color: #83A2D4;
-}
-
-#faq {
-  background-color: white;
 }
