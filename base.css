@@ -128,7 +128,7 @@ h1, h2, h3 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("redef1.png"); 
+  background-image: url("redef1transparent.png"); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -216,8 +216,10 @@ h1, h2, h3 {
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
-
   position: relative;
+}
+#speakers {
+  height: 20%;
 }
 #about {
 	background-color: white;
@@ -371,6 +373,27 @@ h1, h2, h3 {
     padding-left: 5%;
 }
 
+#sponsors {
+  height: auto;
+  min-height: 15rem;
+  justify-content: center;
+}
+
+.sponsorsflex {
+  margin: 0;
+  flex-wrap: wrap;
+  /*display: flex;*/
+  display: block;
+}
+
+.sponsorimg {
+  width: 40%;
+  height: auto;
+  margin: 1rem;
+  max-width: 20rem;
+}
+
+
 @media (max-width: 40rem) {
   .navbar {
     margin-left: 0;
@@ -413,4 +436,7 @@ h1, h2, h3 {
 }
 .table_time {
   color: #83A2D4;
+}
+#sponsors {
+  background-color: white;
 }
