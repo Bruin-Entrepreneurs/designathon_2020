@@ -13,13 +13,57 @@ h1, h2, h3 {
   font-family: Comfortaa; 
     color: #8DA9D4;
 }
+
+.schedule_content_div {
+  margin-top: 3%;
+  position: absolute;
+  margin-left: 5%; 
+  margin-right: 10%; 
+}
+.schedule_text {
+  font-family: Comfortaa;
+  color: #58595B;
+}
+ h4, p {
+  font-family: Open Sans;
+  color: #58595B;
+  font-weight: 100;
+}
 .flex-container {
 	display: flex;
 	margin-right: 5%;
 	width: 90%;
 	margin-left: 5%;
 }
+.schedule_wrapper {
+  height: 80%;
+  margin-top: 3%;
+  width: 50%;
+  overflow: auto;
+}
+.schedule_wrapper::-webkit-scrollbar {
+    width: 39px;
+    padding-top: 5%;
+}
+ 
+/* Track */
+.schedule_wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 
+}
+ 
+/* Handle */
+.schedule_wrapper::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.schedule_wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 .navbar {
   align-items: center;
   margin-top: 1rem;
@@ -101,6 +145,7 @@ h1, h2, h3 {
   /*transition: ease-in-out 10s;*/
   transform: rotate(0deg);
 }
+
 .home-img {
   height: 80%;
   width: 100%;
@@ -127,6 +172,7 @@ h1, h2, h3 {
   padding-bottom: 5%;
   position: relative;
 }
+
 .circle {
   height: 25px;
   width: 25px;
@@ -172,6 +218,9 @@ h1, h2, h3 {
   padding-bottom: 5%;
   position: relative;
 }
+#speakers {
+  height: 20%;
+}
 #about {
 	background-color: white;
   height: auto;
@@ -188,6 +237,93 @@ h1, h2, h3 {
   right: 0;
   bottom: 0;
   z-index: 0;
+}
+
+#speakers {
+  background-color: white;
+  height: auto;
+  min-height: auto;
+
+}
+
+#speakers-flex {
+  flex-wrap: wrap;
+  margin-left: 0;
+/*  padding: 0 5%;
+*/  margin-bottom: 15%;
+  justify-content: space-around;
+  /*min-width: 30em;*/
+}
+
+#speaker-card {
+  /*margin: 5% 5%;*/
+  padding: 1em 1em;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+.speaker-pics {
+/*  height: 80%;
+  width: 80%;*/
+  height: 10em;
+  width: 10em;
+}
+.speaker-pic-container {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Text display on hover */
+.speaker-pics:hover {
+  opacity: .6;
+}
+.speaker_hover_text_title {
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  display: none;
+}
+.speaker_hover_text {
+  position: absolute;
+  top: 40%;
+  display: none;
+}
+.speaker-pics:hover ~ .speaker_hover_text{
+  display: block;
+}
+.speaker-pics:hover ~ .speaker_hover_text_title{
+  display: block;
+}
+.speaker_hover_text:hover {
+  display: block;
+}
+.speaker_hover_text_title:hover {
+  display: block;
+}
+.speaker_hover_text_title:hover ~ .speaker_hover_text{
+  display: block;
+}
+.speaker_hover_text:hover ~ .speaker_hover_text_title{
+  display: block;
+}
+
+
+
+
+#speaker-name {
+  margin-bottom: .1em;
+}
+
+.speak-pos {
+  font-weight: 100;
+  margin: 0 auto;
+}
+
+.speak-org {
+  font-weight: 900;
+  margin: 0 auto;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -284,4 +420,23 @@ h1, h2, h3 {
   .about-img {
     display: none;
   }
+}
+.hoverTable {
+  border-collapse:collapse; 
+  font-family: Comfortaa; 
+  font-size: 24px;
+  height: 10%;
+}
+.hoverTable td{ 
+  padding:20px; border:black 1px solid;
+}
+
+.hoverTable tr:hover {
+  background-color: #C6D3E7;
+}
+.table_time {
+  color: #83A2D4;
+}
+#sponsors {
+  background-color: white;
 }
