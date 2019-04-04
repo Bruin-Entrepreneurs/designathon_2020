@@ -246,17 +246,35 @@ h1, h2, h3 {
 .sponsorsflex {
   margin: 0;
   flex-wrap: wrap;
-  /*display: flex;*/
-  display: block;
+  justify-content: center;
 }
 
-.sponsorimg {
-  width: 40%;
-  height: auto;
+.sponsorDivImg {
+  width: 20rem;
+  height: 10rem;
   margin: 1rem;
-  max-width: 20rem;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  /*opacity: 0.7;*/
+  filter: saturate(80%);
+  transition: ease-in-out 0.2s;
 }
 
+.sponsorDivImg:hover {
+  opacity: 1;
+  filter: saturate(150%);
+  transition: ease-in-out 0.3s;
+}
+
+.linode {background-image: url('sponsor_logos/linode.png');}
+.north {background-image: url('sponsor_logos/north.png');}
+.startup {background-image: url('sponsor_logos/startup.png');}
+.ticket {background-image: url('sponsor_logos/ticket.png');}
+.sketch {background-image: url('sponsor_logos/sketch.png');}
+.oa {background-image: url('sponsor_logos/oa.png');}
 
 @media (max-width: 40rem) {
   .navbar {
@@ -283,5 +301,10 @@ h1, h2, h3 {
   }
   .about-img {
     display: none;
+  }
+  .sponsorDivImg {
+    width: 15rem;
+    height: 10rem;
+    margin: 1rem;
   }
 }
