@@ -251,8 +251,7 @@ h1, h2, h3 {
 #speakers-flex {
   flex-wrap: wrap;
   margin-left: 0;
-/*  padding: 0 5%;
-*/  margin-bottom: 15%;
+  /*margin-bottom: 15%;*/
   justify-content: space-around;
   /*min-width: 30em;*/
 }
