@@ -67,9 +67,13 @@ h1, h2, h3 {
 .navbar {
   align-items: center;
   margin-top: 1rem;
-}
-.navbar {
   margin-left: 2%;
+  justify-content: space-between;
+}
+.nav-buttonbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
 }
 .nav-title {
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -81,7 +85,7 @@ h1, h2, h3 {
   margin-left: 10px;
   font-family: Comfortaa; 
   font-weight: 50px;
-  font-size: 40px;
+  font-size: 25px;
   padding: 5px;
 }
 .nav-title:hover {
@@ -102,6 +106,7 @@ h1, h2, h3 {
   z-index: 99;
   margin-left: auto;
   border: 3px solid #8DA9D4;
+  white-space: nowrap;
   text-align: center;
   border-top-left-radius: 21px;
   border-top-right-radius: 21px;
@@ -441,6 +446,9 @@ h1, h2, h3 {
   .apply-button {
     margin: auto;
     margin-top: 0.5rem;
+  }
+  .nav-buttonbar {
+    justify-content: center;
   }
   .nav-title {
     font-size: 25px;
