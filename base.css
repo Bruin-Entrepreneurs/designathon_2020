@@ -371,6 +371,10 @@ h1, h2, h3 {
     padding-left: 5%;
 }
 
+#faq {
+  height: auto;
+}
+
 #sponsors {
   height: auto;
   min-height: 15rem;
