@@ -121,6 +121,7 @@ h1, h2, h3 {
 .home {
   flex-direction: column;
   position: relative;
+  height: 100vh;
 }
 .home-img {
   height: 80%;
