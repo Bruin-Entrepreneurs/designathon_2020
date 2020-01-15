@@ -2,51 +2,25 @@
 <head>
 	<title>Designathon</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="base.css" type="text/css" /> 
+	<link rel="stylesheet" href="base.css" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" type="text/css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no" />
 </head>
-<body onresize="resizeCircles()">
-	<div class="home flex-container">
-		<div class="flex-container navbar"> 
-			<div class="nav-buttonbar">
-				<a class="nav-link" href="#about"> <button class="nav-title">about</h1> </button> </a>
-				<a class="nav-link" href="#schedule"> <button class="nav-title">schedule</button></a>
-				<a class="nav-link" href="#speakers"> <button class="nav-title">speakers</button></a>
-				<a class="nav-link" href="#faq"> <button class="nav-title">faq</h1> </button> </a>
-			</div>
-			<a href="https://docs.google.com/forms/d/13u7Z0yp5TP48eB1WCdUyoLN05ROkW3h6H-IyBLBN5q4/viewform?edit_requested=true&fbclid=IwAR2ARlZzsqngPtn9d5vKQncePa5iC4ZlHrf4WNoybmHdhqhCm4QN_CmA_pQ" class="apply-button">apply here</a>
+<body>
+	<div id="envision" class="content-section">
+		<div id="title-box">
+			<h1 id="title-text">envision</h1>
+			<h3 id="title-date-text">apr - 04</h3>
 		</div>
-		<div class="home-img splashh">
-			<div id="circleHolder"> </div>
-			<div class="splashBackground"> </div>
-		 </div>
-	</div> 
-	<div id="about" class="content-section">
-		<img class="about-img" src="./path.png" width="20%" height="40%" />
-		<h1 class="section-title"> about </h1>
-		<h3 class="about-text"> Designathon is a beginner-friendly, experience design competition hosted by Bruin Entrepreneurs with the goal of fostering design thinking at UCLA through a series of workshops, culminating in a final competition. The event will be held in Carnesale Commons in the Palisades Room. Find out more about last year's designathon <a href="https://medium.com/bruin-entrepreneurs-stories/designathon-2018-1a82282f1448" class="text-link"> here! </a></h3>
-		<div style="display: flex; flex-direction: column;">
-			<h1 style="z-index: 1;"> what is design thinking? 
-			</h1>
-			<h3 class="about-text"> According to <span style="color: #83A2D4"> IDEO</span>, design thinking utilizes elements from the designer's toolkit like empathy and experimentation to arrive at innovative solutions. </h3>
-		</div>
-		<div class="circle-group">
-			<h2> (re)frame </h2>
-			<img class="circle-lines" src="./Circles-1.svg" />
-		</div>
-		<div class="circle-group">
-			<h2> <span style="color: #A198CA">(re)iterate</span></h2>
-			<img class="circle-lines" src="./Circles-2.svg" />
-		</div>
-		<div class="circle-group">
-			<h2> <span style="color: #EF9C9D"> (re)invent </span> </h2>
-			<img class="circle-lines" src="./Circles-3.svg" />
+		<div id="link-box">
+			<div id="link-box-top"></div>
+			<div id="link-box-bottom"></div>
 		</div>
 	</div>
+
 	<div id="schedule" class="content-section">
 		<h1 class="section-title"> schedule </h1>
 		<div style="display: flex; width: 100%; height: 100%;">
@@ -57,12 +31,12 @@
 						<td class="table_time"> <b>8:30 AM</b> </td>
 						<td> check-in </td>
 					</tr>
-					<tr class="hover_show_div"> 
+					<tr class="hover_show_div">
 						<td class="table_time"> <b>9:00 AM</b> </td>
 						<td> intro to UX | design challenge </td>
 					</tr>
 
-					<tr class="hover_show_div"> 
+					<tr class="hover_show_div">
 						<td class="table_time"> <b>10:00 AM</b> </td>
 
 						<td> <span style="color: #83A2D4"> empathizing </span> with Northrop Grumman </td>
@@ -72,11 +46,11 @@
 						<td class="table_time"> <b>11:00 AM</b> </td>
 						<td> think break with activities </td>
 					</tr>
-					<tr class="hover_show_div"> 
+					<tr class="hover_show_div">
 						<td class="table_time"> <b>11:30 AM</b> </td>
 						<td> <span style="color: #83A2D4"> ideating </span> with Ticketmaster </td>
 					</tr>
-					<tr class="hover_show_div"> 
+					<tr class="hover_show_div">
 						<td class="table_time"> <b>12:30 PM</b> </td>
 						<td> lunch on the hill </td>
 					</tr>
@@ -84,7 +58,7 @@
 						<td class="table_time"> <b>1:30 PM</b> </td>
 						<td> <span style="color: #83A2D4"> prototyping </span> with creative labs </td>
 					</tr>
-					<tr class="hover_show_div"> 
+					<tr class="hover_show_div">
 						<td class="table_time"> <b> 2:30 PM </b> </td>
 						<td> design time </td>
 					</tr>
@@ -92,7 +66,7 @@
 						<td class="table_time"> <b> 4:00 PM </b> </td>
 						<td> design in industry panel </td>
 					</tr>
-					<tr class="hover_show_div"> 
+					<tr class="hover_show_div">
 						<td class="table_time"> <b> 5:00 PM </b> </td>
 						<td> closing ceremony </td>
 					</tr>
@@ -143,178 +117,8 @@
 			</div>
 		</div>
 	</div>
-
-	<div id="speakers" class="content-section">
-		<h1 class="section-title"> speakers </h1>
-		<div id="speakers-flex" class="flex-container">
-			<div id="speaker-card">
-				<div class="speaker-pic-container">
-					<img class="speaker-pics" src="speaker_pics/kelly.png">
-					<!-- <p class="speaker_hover_text_title">Northrop Grumman</h1>
-					<p class="speaker_hover_text">Sr Staff Engineer Judge</p> -->
-				</div>
-				<h3 id="speaker-name">Kelly Wald</h3>
-				<p class="speak-pos">UX Design Lead</p>
-				<p class="speak-org">Disney</p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/chengsu.png">
-				<h3 id="speaker-name">Chengsu Chen</h3>
-				<p class="speak-pos">Product Designer</p>
-				<p class="speak-org">Facebook</p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/chris.png">
-				<h3 id="speaker-name">Chris Alonso</h3>
-				<p class="speak-pos">Designer/Brand</p>
-				<p class="speak-org">Zealer Appeal</p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/jeff.png">
-				<h3 id="speaker-name">Jeff Morris</h3>
-				<p class="speak-pos">Product Director</p>
-				<p class="speak-org">Tinder</p>
-			</div>
-		</div>
-	</div>
-	<div id="speakers" class="content-section">
-		<h1 class="section-title"> judges, workshop hosts, and mentors </h1>
-		<div id="speakers-flex" class="flex-container">
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/amanda_muller.png" title="Amanda">
-				<h3 id="speaker-name">Amanda Muller</h3>
-				<p class="speak-pos"> Judge </p>
-				<p class="speak-pos">UX Technical Fellow - Space Programs</p>
-				<p class="speak-org"> Northrop Grumman </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/shivani_desai.png">
-				<h3 id="speaker-name">Shivani Desai</h3>
-				<p class="speak-pos"> Mentor </p>
-				<p class="speak-pos"> Manager - UX Efforts</p>
-				<p class="speak-org"> Northrop Grumman </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/travis_clarke.png">
-				<h3 id="speaker-name">Travis Clarke</h3>
-				<p class="speak-pos"> Workshop Host </p>
-				<p class="speak-pos">Lead UX/UI - Air & Space</p>
-				<p class="speak-org"> Northrop Grumman </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/myong_sung.png">
-				<h3 id="speaker-name">Myong Sung</h3>
-				<p class="speak-pos"> Workshop Host </p>
-				<p class="speak-pos"> Manager - Systems Engineering </p>
-				<p class="speak-org"> Northrop Grumman </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/ed_tien.png">
-				<h3 id="speaker-name">Ed Tien</h3>
-				<p class="speak-pos"> Mentor </p>
-				<p class="speak-pos"> Talent Acquisition</p>
-				<p class="speak-org"> Northrop Grumman </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/natalie_huynh.png">
-				<h3 id="speaker-name">Natalie Huynh</h3>
-				<p class="speak-pos"> Sr. Designer </p>
-				<p class="speak-org"> Ticketmaster </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/julia_walck.png">
-				<h3 id="speaker-name">Julia Walck</h3>
-				<p class="speak-pos"> Sr. Graphic Designer </p>
-				<p class="speak-org"> Ticketmaster </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/brandon_melchior.png">
-				<h3 id="speaker-name">Brandon Melchior</h3>
-				<p class="speak-pos"> Judge </p>
-				<p class="speak-pos"> Sr. Director – Design </p>
-				<p class="speak-org"> Ticketmaster </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/zachary_hubbard.png">
-				<h3 id="speaker-name">Zachary Hubbard</h3>
-				<p class="speak-pos">Principal UX Designer - Space</p>
-				<p class="speak-org"> Northrop Grumman </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/dan_selden.png">
-				<h3 id="speaker-name">Dan Selden</h3>
-				<p class="speak-pos"> Mentor </p>
-				<p class="speak-pos"> Sr. Product Designer II </p>
-				<p class="speak-org"> Ticketmaster </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/alexander_schroeder.png">
-				<h3 id="speaker-name">Alexander Schroeder</h3>
-				<p class="speak-pos"> Mentor </p>
-				<p class="speak-pos"> Contractor </p>
-			</div>
-			<div id="speaker-card">
-				<img class="speaker-pics" src="speaker_pics/drey_cameron.png">
-				<h3 id="speaker-name">Drey Cameron</h3>
-				<p class="speak-pos"> Judge </p>
-				<p class="speak-pos"> Director - Product Design</p>
-				<p class="speak-org"> Ticketmaster </p>
-			</div>
-		</div>
-	</div>
-
-	<div id="faq" class="content-section">
-		<h1 class="section-title"> faq </h1>
-		<div class="faq-content">
-			<h2> design thinking faq </h2>
-			<button class="accordion">What is it?</button>
-			<div class="panel">
-				<p> With the rise of technology, design thinking is a problem solving toolkit that puts humans and empathy at the forefront of products and innovation. Design thinking informs human-centered innovation by minimizing the uncertainty and risk of innovation by engaging customers or users through a series of prototypes to learn, test and refine concepts. Design thinkers rely on customer insights gained from real-world experiments, not just historical data or market research.  </p>
-			</div>
-			<button class="accordion"> What can I do with it? </button>
-			<div class="panel">
-				<p> Design thinking is a human-centered problem solving approach that is permeating every industry, including fields such as medicine, engineering, and education. It is thus is limitless in its applications. For a more in-depth look at its use in a real world context, this <a href="https://www.forbes.com/sites/imperialinsights/2018/02/14/design-thinking-the-key-to-successful-innovation/#548eef15301e" class="text-link"> Forbes article </a> provides some examples.  </p>
-			</div>
-			<h2> designathon faq </h2>
-			<button class="accordion"> When is it? </button>
-			<div class="panel">
-				<p> Designathon will be held on April 6th this year. Be sure to apply before April 4th! </p>
-			</div>
-			<button class="accordion"> Who can attend? </button>
-			<div class="panel">
-				<p> Whether you’re a complete beginner or seasoned pro, freshman or senior, you’re welcome to participate in this all-inclusive event. Apply today!  </p>
-			</div>
-			<button class="accordion"> How do I prepare? </button>
-			<div class="panel">
-				<p> To prepare for the day of the event, you will need to bring some form of ID for check in and a laptop to work on. In terms of how to prepare for the final competition, you will not need to do prior research on design thinking because our workshops will be catered towards guiding you in the process of completing each step of your project by teaching the design thinking cycle, but it's highly suggested! Check our Facebook event page <a href="https://www.facebook.com/events/2284814805171199/" class="text-link">here</a> for more resources.  </p>
-			</div>
-			<button class="accordion"> What should I bring? </button>
-			<div class="panel">
-				<p> Bring your Bruin photo ID or any government-issued ID to check in to the event.  </p>
-			</div>
-			<button class="accordion"> When is the application deadline? </button>
-			<div class="panel">
-				<p> Be sure to apply before April 4th using the apply button above!  </p>
-			</div>
-		</div>
-		<br />
-		<br />
-	</div>
-	<div id="sponsors" class="content-section">
-		<h1 class="section-title"> sponsors 
-		</h1>
-		<div class="sponsorsflex flex-container">
-			<a class="sponsorDivImg north" target="_blank" href="http://www.northropgrumman.com/"> </a>
-			<a class="sponsorDivImg ticket" target="_blank" href="https://www.Ticketmaster.com/"> </a>
-			<a class="sponsorDivImg startup" target="_blank" href="https://startupucla.com/"> </a>
-			<a class="sponsorDivImg sketch" target="_blank" href="https://www.sketch.com/"> </a>
-			<a class="sponsorDivImg linode" target="_blank" href="https://www.linode.com/"> </a>
-			<a class="sponsorDivImg oa" target="_blank" href="https://oandapc.com/"> </a>
-
-		</div>
 	</div>
 <script src="base.js"></script>
 <script src="faded.js"></script>
 </body>
 </html>
-

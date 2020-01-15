@@ -10,15 +10,31 @@ body {
   overflow-x: hidden;
 }
 h1, h2, h3 {
-  font-family: Comfortaa; 
+  font-family: Comfortaa;
     color: #8DA9D4;
+}
+
+#title-box {
+  text-align: center;
+  border-style: solid;
+  width: 50%;
+}
+
+#title-text {
+  font-size: 20vh;
+  margin-bottom: 0;
+}
+
+#title-date-text {
+  font-size: 10vh;
+  margin-top: 0;
 }
 
 .schedule_content_div {
   margin-top: 3%;
   position: absolute;
-  margin-left: 5%; 
-  margin-right: 10%; 
+  margin-left: 5%;
+  margin-right: 10%;
 }
 .schedule_text {
   font-family: Comfortaa;
@@ -45,24 +61,24 @@ h1, h2, h3 {
     width: 39px;
     padding-top: 5%;
 }
- 
+
 /* Track */
 .schedule_wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 
 }
- 
+
 /* Handle */
 .schedule_wrapper::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 .schedule_wrapper::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 .navbar {
   align-items: center;
@@ -83,7 +99,7 @@ h1, h2, h3 {
   color: #8DA9D4;
   margin-right: 10px;
   margin-left: 10px;
-  font-family: Comfortaa; 
+  font-family: Comfortaa;
   font-weight: 50px;
   font-size: 25px;
   padding: 5px;
@@ -115,7 +131,7 @@ h1, h2, h3 {
 }
 
 .apply-button:hover {
-  background-color: #8DA9D4; 
+  background-color: #8DA9D4;
   color: white;
 }
 .home {
@@ -138,7 +154,7 @@ h1, h2, h3 {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("redef1transparent.png"); 
+  background-image: url("redef1transparent.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -362,7 +378,7 @@ h1, h2, h3 {
 .panel {
 /*  padding: 0 18px;
 */  background-color: white;
-  max-height: 0; 
+  max-height: 0;
   overflow: scroll;
   font-family: Karla;
   font-size: 20px;
@@ -417,12 +433,12 @@ h1, h2, h3 {
 
 
 .hoverTable {
-  border-collapse:collapse; 
-  font-family: Comfortaa; 
+  border-collapse:collapse;
+  font-family: Comfortaa;
   font-size: 24px;
   height: 10%;
 }
-.hoverTable td{ 
+.hoverTable td{
   padding:20px; border:black 1px solid;
 }
 
