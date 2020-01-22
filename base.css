@@ -453,6 +453,128 @@ h1, h2, h3 {
   background-color: white;
 }
 
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*
+Creates a rectangular container for the boxes
+*/
+.container {
+  width: 65vw;
+  height: 74vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-left: 0.125rem solid black;
+  border-top: 0.125rem solid black;
+  background-color: white;
+  flex-direction: row;
+}
+
+
+.partial-border:after {
+  content: '';
+  border-bottom: 0.5rem solid black;
+  position: absolute;
+  width: 0%;
+  left: 0%;
+}
+
+
+.half-column {
+  flex: 1;
+  border-left: 0.125rem solid black;
+  border-top: 0.125rem solid black;
+  border-right: 0.125rem solid black;
+  border-bottom: 0.25rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.half-row {
+  flex: 1;
+  border: 0.125rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/*
+.imgcontainer {
+  height: 24.0625rem;
+  width: 25.6875rem;
+}
+*/
+
+.box {
+  height: 32vh;
+  width: 22.4vw;
+  background-color: #C2DF87;
+  border: 0rem solid white;
+  overflow: visible;
+  display: flex;
+}
+
+.dogImage {
+  height: 32vh;
+  width: 23.5vw;
+  margin-left: 1.6vw;
+  margin-top: 1.7vh;
+  overflow: visible;
+
+  border: 0rem solid white;
+  background-image: url(dog.png);
+}
+
+#noborder {
+  border: 0rem solid white;
+}
+
+#thiccBorderBottom {
+  border-bottom: 0.25rem solid black;
+  border-right: 0.25rem solid black;
+}
+
+#thiccBorderLeft {
+  border-top: 0rem solid black;
+  border-right: 0rem solid black;
+  border-bottom: 0rem solid black;
+}
+
+#thiccMargin {
+  border: 0rem solid white;
+  margin-top: 2.9vh;
+  margin-left: 3.65vw;
+}
+
+#smallRow {
+  flex: 0.43;
+  border: 0rem solid white;
+  margin-top: 2vh;
+  margin-left: 4.4vw;
+}
+
+#thiccBorderTop {
+  border-top: 0.25rem solid black;
+  border-right: 0rem solid black;
+  border-bottom: 0rem solid black;
+  border-left: 0rem solid black;
+}
+
+#blueBox {
+  background-color: #85AAB2;
+  padding-left: 6.25rem;
+}
+
 @media (max-width: 40rem) {
   .navbar {
     margin-left: 0;
