@@ -21,6 +21,7 @@ h1, h2, h3 {
 }
 
 #title-text {
+  font-family: 'Shrikhand', cursive;
   font-size: 20vh;
   margin-bottom: 0;
 }
