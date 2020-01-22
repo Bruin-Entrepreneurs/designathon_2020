@@ -13,7 +13,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-// var second_acc = document.getElementsByClassName("hover_show_div");
+ var second_acc = document.getElementsByClassName("hover_show_div");
 // var third_acc = document.querySelectorAll('.schedule_content_div');
 // var k;
 function handler_create ( ) {
