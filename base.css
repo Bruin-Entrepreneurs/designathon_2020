@@ -15,25 +15,80 @@ h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
 }
 
+p {
+    font-family: 'Nunito', san-serif;
+    color: #151041;
+    font-weight: 100;
+    font-size: 1vw;
+}
+
 
 
 #title-box {
   text-align: center;
-  border-style: solid;
-  width: 50%;
+  vertical-align: middle;
+  /* border-style: solid; */
+  /* width: 50%; */
+}
+
+#title-text-box {
+    margin: auto;
 }
 
 #title-text {
   font-family: 'Shrikhand', cursive;
-  font-size: 20vh;
-  margin-bottom: 0;
+  font-size: 6.7vw;
+  text-align: center;
+  margin: -5vh 0;
+  font-weight: 100;
 }
+
+#title-left-upper {
+    border-right: 0;
+}
+
 
 #title-date-text {
   font-family: 'Nunito', sans-serif;
   font-weight: normal;
-  font-size: 10vh;
-  margin-top: 0;
+  font-size: 3vw;
+  margin: 0;
+  /* margin: auto 0; */
+}
+
+#title-sub-title {
+    font-style: bold;
+    font-size: 2vw;
+    text-align: left;
+}
+
+.title-sub-text {
+    text-align: left;
+    margin-left: .5vw;
+}
+
+.section-title {
+  border-bottom: 0.25rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  height: 15%;
+}
+
+.section-title-text {
+    font-style: bold;
+    font-size: 2vw;
+    margin: auto auto;
+    /* text-align: center; */
+}
+
+.link-box {
+    margin-left: 4vw;
+}
+
+.link-subtext {
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 .schedule_content_div {
@@ -46,11 +101,12 @@ h1, h2, h3 {
   font-family: Comfortaa;
   color: #58595B;
 }
- h4, p {
-  font-family: Open Sans;
-  color: #58595B;
-  font-weight: 100;
-}
+
+/*  h4, p { */
+/*   font-family: Open Sans; */
+/*   color: #58595B; */
+/*   font-weight: 100; */
+/* } */
 .flex-container {
 	display: flex;
 	margin-right: 5%;
@@ -484,6 +540,18 @@ Creates a rectangular container for the boxes
   flex-direction: row;
 }
 
+.container-plain {
+  width: 65vw;
+  height: 74vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-direction: row;
+
+}
+
 
 .partial-border:after {
   content: '';
@@ -496,21 +564,40 @@ Creates a rectangular container for the boxes
 
 .half-column {
   flex: 1;
-  border-left: 0.125rem solid black;
-  border-top: 0.125rem solid black;
-  border-right: 0.125rem solid black;
+  border-left: 0.25rem solid black;
+  border-top: 0.25rem solid black;
+  border-right: 0.25rem solid black;
   border-bottom: 0.25rem solid black;
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
 }
 
-.half-row {
+.half-column-plain {
   flex: 1;
-  border: 0.125rem solid black;
+  /* border-left: 0.125rem solid black; */
+  /* border-top: 0.125rem solid black; */
+  /* border-right: 0.125rem solid black; */
+  /* border-bottom: 0.25rem solid black; */
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
+
+}
+
+.half-row {
+  flex: 1;
+  border: 0.25rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.half-row-plain {
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 /*
