@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-	background-color: rgba(242, 242, 243, 1);
+  background-color: rgba(242, 242, 243, 1);
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -27,6 +27,7 @@ p {
 #title-box {
   text-align: center;
   vertical-align: middle;
+  height: 100%;
   /* border-style: solid; */
   /* width: 50%; */
 }
@@ -68,6 +69,7 @@ p {
 }
 
 .section-title {
+    width: 100%;
   border-bottom: 0.25rem solid black;
   flex-direction: column;
   flex-wrap: wrap;
@@ -76,14 +78,31 @@ p {
 }
 
 .section-title-text {
+    
+    text-align: left;
     font-style: bold;
     font-size: 2vw;
     margin: auto auto;
+    margin-left: 2vw;
     /* text-align: center; */
 }
 
 .link-box {
     margin-left: 4vw;
+    height: 70%;
+}
+
+.link-item {
+    text-align: left;
+    margin-top: 7.5%;
+}
+
+.link-title-text {
+    text-align: left;
+    font-style: bold;
+    font-size: 2vw;
+    margin: auto auto;
+ 
 }
 
 .link-subtext {
@@ -534,20 +553,21 @@ Creates a rectangular container for the boxes
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-left: 0.125rem solid black;
-  border-top: 0.125rem solid black;
-  background-color: white;
+  /* border-left: 0.125rem solid black; */
+  /* border-top: 0.125rem solid black; */
+  border: 0.25rem solid black;
+  /* background-color: white; */
   flex-direction: row;
 }
 
 .container-plain {
   width: 65vw;
-  height: 74vh;
+  height: 80vh;
   position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: white;
+  /* background-color: rgba(242, 242, 243, 1); */
   flex-direction: row;
 
 }
@@ -582,6 +602,7 @@ Creates a rectangular container for the boxes
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
+  height: 85%;
 
 }
 
@@ -591,6 +612,7 @@ Creates a rectangular container for the boxes
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;
+  height: 50%;
 }
 
 .half-row-plain {
@@ -665,6 +687,17 @@ Creates a rectangular container for the boxes
 #blueBox {
   background-color: #85AAB2;
   padding-left: 6.25rem;
+}
+
+
+.q-box {
+    margin: 0% 5%;
+    width: 90%;
+    height: 30%;
+}
+
+.q-box-question {
+    
 }
 
 @media (max-width: 40rem) {
