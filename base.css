@@ -689,6 +689,22 @@ Creates a rectangular container for the boxes
   padding-left: 6.25rem;
 }
 
+#last-year-winners-box {
+    height: 50%;
+    width: 90%
+}
+
+.winner-box {
+    
+   margin: auto 5%;
+   width: 90%;
+   height: 30%;
+}
+
+.winner-name {
+    margin: 0 0;
+    font-size: 1.3vw;
+}
 
 .q-box {
     margin: 0% 5%;
