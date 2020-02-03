@@ -22,6 +22,11 @@ p {
     font-size: 1vw;
 }
 
+a {
+    text-decoration: none;
+    color: #151041;
+}
+
 
 
 #title-box {
@@ -53,7 +58,7 @@ p {
   font-family: 'Nunito', sans-serif;
   font-weight: normal;
   font-size: 3vw;
-  margin: 0;
+  margin: 1rem 0;
   /* margin: auto 0; */
 }
 
@@ -78,7 +83,7 @@ p {
 }
 
 .section-title-text {
-    
+
     text-align: left;
     font-style: bold;
     font-size: 2vw;
@@ -102,7 +107,7 @@ p {
     font-style: bold;
     font-size: 2vw;
     margin: auto auto;
- 
+
 }
 
 .link-subtext {
@@ -469,9 +474,10 @@ p {
     padding-left: 5%;
 }
 
+/*
 #faq {
   height: auto;
-}
+}*/
 
 #sponsors {
   height: auto;
@@ -689,13 +695,17 @@ Creates a rectangular container for the boxes
   padding-left: 6.25rem;
 }
 
+#last-year-text {
+  margin: auto 4%;
+}
+
 #last-year-winners-box {
     height: 50%;
     width: 90%
 }
 
 .winner-box {
-    
+
    margin: auto 5%;
    width: 90%;
    height: 30%;
@@ -713,41 +723,56 @@ Creates a rectangular container for the boxes
 }
 
 .q-box-question {
-    
+  font-size: 2vw;
 }
 
 @media (max-width: 40rem) {
-  .navbar {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  p {
+    /* margin-top: 0; */
+    font-size: 2vw;
   }
-  .home-img {
-    height: 50%;
+
+  .container {
+    width: 80vw;
   }
-  .apply-button {
-    margin: auto;
-    margin-top: 0.5rem;
+
+  .container-plain {
+    width: 80vw;
   }
-  .nav-buttonbar {
-    justify-content: center;
+
+  #title-date-text {
+    margin: 2rem 0;
   }
-  .nav-title {
-    font-size: 25px;
+
+  #title-sub-title {
+    font-size: 4vw;
   }
-  .circle-lines {
-    width: 50%;
+
+  #last-year-text {
+    font-size: 1.8vw;
   }
-  .about-img {
-    display: none;
+
+  .link-item {
+    margin: 2rem 0;
   }
-  .sponsorDivImg {
-    width: 15rem;
-    height: 10rem;
-    margin: 1rem;
+
+  .link-title-text {
+    font-size: 4vw;
   }
+
+  .section-title-text {
+    font-size: 4vw;
+  }
+
+  .winner-name {
+    font-size: 2.3vw;
+
+  }
+
+  .q-box-question {
+    margin-bottom: 0;
+    font-size: 3.8vw;
+  }
+
 }
