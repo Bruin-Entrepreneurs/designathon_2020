@@ -14,6 +14,12 @@ h1, h2, h3 {
     color: #8DA9D4;
 }
 
+h4 {
+  font-family: Comfortaa;
+    color: #8DA9D4;
+    font-size: 1rem;
+}
+
 #title-box {
   text-align: center;
   border-style: solid;
@@ -528,7 +534,7 @@ Creates a rectangular container for the boxes
   flex-wrap: wrap;
   border-left: 0.125rem solid black;
   border-top: 0.125rem solid black;
-  background-color: white;
+  background-color: rgba(242, 242, 243, 1);
   flex-direction: row;
 }
 
@@ -561,6 +567,13 @@ Creates a rectangular container for the boxes
   display: flex;
 }
 
+.half-row-div {
+  flex: 1;
+  margin-left: 15%;
+  margin-right: 12%;
+  margin-top: 2%;
+}
+
 /*
 .imgcontainer {
   height: 24.0625rem;
@@ -571,7 +584,7 @@ Creates a rectangular container for the boxes
 .greenBox {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, #C2DF87 84.9%, white 84.9%);
+  background: linear-gradient(to right, #C2DF87 84.9%, rgba(242, 242, 243, 1) 84.9%);
   border: 0rem solid white;
   overflow: visible;
   display: flex;
