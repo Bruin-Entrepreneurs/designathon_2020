@@ -668,11 +668,9 @@ Creates a rectangular container for the boxes
   margin-top: 1.7vh;
   overflow: visible;
 
-  border: 0rem solid white;
-  /* background-image: url(dog.png); */
 }
 
-#noborder {
+.noborder {
   border: 0rem solid white;
 }
 
@@ -716,6 +714,37 @@ Creates a rectangular container for the boxes
   margin: auto 4%;
 }
 
+#star-background {
+  height: 40%;
+  width: 40%;
+  position: absolute;
+  bottom: -3vh;
+  left: -4vw;
+  background: #151041;
+}
+
+#star-pic {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 2vh;
+  bottom: 2vh;
+}
+
+#last-year-pic-box {
+  height: 50%;
+  text-align: center;
+}
+
+
+#whiteboard-pic {
+  height: 70%;
+  width: 80%;
+  display: block;
+  /* margin-top: 20%; */
+  margin: 6% auto;
+}
+
 #last-year-winners-box {
     height: 50%;
     width: 90%
@@ -740,7 +769,9 @@ Creates a rectangular container for the boxes
 }
 
 .q-box-question {
-  font-size: 2vw;
+  font-size: 1.3vw;
+  /* margin-top: auto; */
+  margin-bottom: .5rem;
 }
 
 @media (max-width: 40rem) {
@@ -788,8 +819,8 @@ Creates a rectangular container for the boxes
   }
 
   .q-box-question {
-    margin-bottom: 0;
-    font-size: 3.8vw;
+
+    font-size: 3vw;
   }
 
 }
