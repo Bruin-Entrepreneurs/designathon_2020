@@ -657,11 +657,11 @@ Creates a rectangular container for the boxes
   width: 22.4vw;
   background-color: #C2DF87;
   border: 0rem solid white;
-  overflow: visible;
+  /* overflow: visible; */
   display: flex;
 }
 
-.dogImage {
+#dogImage {
   height: 32vh;
   width: 23.5vw;
   margin-left: 1.6vw;
@@ -669,7 +669,7 @@ Creates a rectangular container for the boxes
   overflow: visible;
 
   border: 0rem solid white;
-  background-image: url(dog.png);
+  /* background-image: url(dog.png); */
 }
 
 #noborder {
