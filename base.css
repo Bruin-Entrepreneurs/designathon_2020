@@ -1,4 +1,5 @@
 /* about-img img is wrong. Theres more detail in the original */
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,27 +9,111 @@ body {
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
+  color: #151041;
 }
 h1, h2, h3 {
-  font-family: Comfortaa;
-    color: #8DA9D4;
+  font-family: 'Nunito', sans-serif;
 }
+
+p {
+    font-family: 'Nunito', san-serif;
+    color: #151041;
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+
 
 #title-box {
   text-align: center;
-  border-style: solid;
-  width: 50%;
+  vertical-align: middle;
+  /* border-style: solid; */
+  /* width: 50%; */
+}
+
+#title-text-box {
+    margin: auto;
 }
 
 #title-text {
   font-family: 'Shrikhand', cursive;
-  font-size: 20vh;
-  margin-bottom: 0;
+  font-size: 6.7vw;
+  text-align: center;
+  margin: -5vh 0;
+  font-weight: 100;
 }
 
+#title-left-upper {
+    border-right: 0;
+}
+
+
 #title-date-text {
-  font-size: 10vh;
-  margin-top: 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  font-size: 3vw;
+  margin: 0;
+  /* margin: auto 0; */
+}
+
+#title-sub-title {
+    font-style: bold;
+    font-size: 2vw;
+    text-align: left;
+}
+
+.title-sub-text {
+    text-align: left;
+    margin-left: .5vw;
+}
+
+.section-title {
+  border-bottom: 0.25rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  height: 13%;
+}
+
+.section-title-text {
+    font-style: bold;
+    font-size: 2vw;
+    margin: auto auto;
+    /*text-align: right;*/
+}
+
+/*schedule trait below*/
+.section-title-text-schedule {
+    font-style: bold;
+    font-size: 2vw;
+    margin: auto auto;
+    margin-top: 1vw;
+    text-align: right;
+    /*margin-right: 1vw;*/
+}
+
+.section-title-text-schedule-contents {
+    font-style: bold;
+    font-size: 2vw;
+    margin: auto auto;
+    margin-top: 1vw;
+    text-align: left;
+    /*margin-right: 1vw;*/
+}
+
+.link-box {
+    margin-top: 3vw;
+    margin-left: 4vw;
+}
+
+.link-box-two {
+    margin-top: 3vw;
+    margin-left: 0.75vw;
+}
+
+.link-subtext {
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 .schedule_content_div {
@@ -41,11 +126,12 @@ h1, h2, h3 {
   font-family: Comfortaa;
   color: #58595B;
 }
- h4, p {
-  font-family: Open Sans;
-  color: #58595B;
-  font-weight: 100;
-}
+
+/*  h4, p { */
+/*   font-family: Open Sans; */
+/*   color: #58595B; */
+/*   font-weight: 100; */
+/* } */
 .flex-container {
 	display: flex;
 	margin-right: 5%;
@@ -451,6 +537,181 @@ h1, h2, h3 {
 }
 #sponsors {
   background-color: white;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*
+Creates a rectangular container for the boxes
+*/
+.container {
+  width: 65vw;
+  height: 74vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-left: 0.125rem solid black;
+  border-top: 0.125rem solid black;
+  background-color: white;
+  flex-direction: row;
+}
+
+.container-plain {
+  width: 65vw;
+  height: 74vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-direction: row;
+
+}
+
+
+.partial-border:after {
+  content: '';
+  border-bottom: 0.5rem solid black;
+  position: absolute;
+  width: 0%;
+  left: 0%;
+}
+
+
+.half-column {
+  flex: 1;
+  border-left: 0.25rem solid black;
+  border-top: 0.25rem solid black;
+  border-right: 0.25rem solid black;
+  border-bottom: 0.25rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.quarter-column-one {
+  flex: 0.4;
+  border-left: 0.25rem solid black;
+  border-top: 0.25rem solid black;
+  /*border-right: 0.25rem solid black;*/
+  border-bottom: 0.25rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.quarter-column-two {
+  flex: 0.8;
+  /*border-left: 0.25rem solid black;*/
+  border-top: 0.25rem solid black;
+  /*border-right: 0.25rem solid black;*/
+  border-bottom: 0.25rem solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.half-column-plain {
+  flex: 1;
+  /* border-left: 0.125rem solid black; */
+  /* border-top: 0.125rem solid black; */
+  /* border-right: 0.125rem solid black; */
+  /* border-bottom: 0.25rem solid black; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+
+}
+
+.half-row {
+  flex: 1;
+  border: 0.25rem solid black;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.half-row-plain {
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+/*
+.imgcontainer {
+  height: 24.0625rem;
+  width: 25.6875rem;
+}
+*/
+
+.box {
+  height: 32vh;
+  width: 22.4vw;
+  background-color: #C2DF87;
+  border: 0rem solid white;
+  overflow: visible;
+  display: flex;
+}
+
+.dogImage {
+  height: 32vh;
+  width: 23.5vw;
+  margin-left: 1.6vw;
+  margin-top: 1.7vh;
+  overflow: visible;
+
+  border: 0rem solid white;
+  background-image: url(dog.png);
+}
+
+#noborder {
+  border: 0rem solid white;
+}
+
+#thiccBorderBottom {
+  border-bottom: 0.25rem solid black;
+  border-right: 0.25rem solid black;
+}
+
+#thiccBorderLeft {
+  border-top: 0rem solid black;
+  border-right: 0rem solid black;
+  border-bottom: 0rem solid black;
+}
+
+#thiccMargin {
+  border: 0rem solid white;
+  margin-top: 2.9vh;
+  margin-left: 3.65vw;
+}
+
+#smallRow {
+  flex: 0.43;
+  border: 0rem solid white;
+  margin-top: 2vh;
+  margin-left: 4.4vw;
+}
+
+#thiccBorderTop {
+  border-top: 0.25rem solid black;
+  border-right: 0rem solid black;
+  border-bottom: 0rem solid black;
+  border-left: 0rem solid black;
+}
+
+#blueBox {
+  background-color: #85AAB2;
+  padding-left: 6.25rem;
 }
 
 @media (max-width: 40rem) {
