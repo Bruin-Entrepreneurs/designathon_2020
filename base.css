@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
   color: #151041;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Nunito', sans-serif;
 }
 
@@ -28,9 +28,32 @@ a {
 }
 
 h4 {
-  font-family: Comfortaa;
-    color: #8DA9D4;
+  /* font-family: ''; */
+    /* color: #8DA9D4; */
     font-size: 1rem;
+}
+
+#nav {
+  background-color: #C2DF87;
+  width: 100%;
+  height: 8vh;
+
+}
+
+#bar {
+  height: 8vh;
+  width: 65vw;
+  display: flex;
+  margin: 0 auto;
+  /* justify-content: center; */
+  justify-content: flex-end;
+
+}
+
+.nav-link {
+  height: 100%;
+  padding-left: 2vw;
+
 }
 
 #title-box {
@@ -132,6 +155,7 @@ h4 {
   position: absolute;
   top: 5vh;
   right: -30%;
+  overflow-x: hidden;
 }
 
 #bike-img-box {
@@ -357,7 +381,7 @@ Creates a rectangular container for the boxes
   width: 22.4vw;
   background-color: #C2DF87;
   border: 0rem solid white;
-  /* overflow: visible; */
+  overflow: hidden;
   display: flex;
 }
 
@@ -433,59 +457,7 @@ Creates a rectangular container for the boxes
   margin-bottom: .5rem;
 }
 
-@media (max-width: 40rem) {
 
-  p {
-    /* margin-top: 0; */
-    font-size: 2vw;
-  }
-
-  .container {
-    width: 80vw;
-  }
-
-  .container-plain {
-    width: 80vw;
-  }
-
-/* schedule: Monica's section */
-  .container-plain-schedule {
-    width: 40vw;
-  }
-
-  #title-date-text {
-    margin: 2rem 0;
-  }
-
-  #title-sub-title {
-    font-size: 4vw;
-  }
-
-  #last-year-text {
-    font-size: 1.8vw;
-  }
-
-  .link-item {
-    margin: 2rem 0;
-  }
-
-  .link-title-text {
-    font-size: 4vw;
-  }
-
-  .section-title-text {
-    font-size: 4vw;
-  }
-
-  .winner-name {
-    font-size: 2.3vw;
-  }
-
-  .q-box-question {
-    font-size: 3vw;
-  }
-
-}
 
 
 
@@ -522,7 +494,7 @@ Classes for the sponsor section
   width: 100%;
   background: linear-gradient(to right, #C2DF87 84.9%, rgba(242, 242, 243, 1) 84.9%);
   border: 0rem solid white;
-  overflow: visible;
+  /* overflow: visible; */
   display: flex;
 }
 
@@ -546,7 +518,7 @@ Classes for the sponsor section
   width: 16.65%;
   background: linear-gradient(to right, #85AAB2 100%, white 100%);
   border: 0rem solid white;
-  overflow: visible;
+  /* overflow: visible; */
   display: flex;
 }
 
@@ -569,12 +541,14 @@ Classes for the sponsor section
 #thiccBorderBottom {
   border-bottom: 0.25rem solid black;
   border-right: 0.25rem solid black;
+  border-left: 0;
 }
 
 #thiccBorderLeft {
   border-top: 0rem solid black;
   border-right: 0rem solid black;
   border-bottom: 0rem solid black;
+  border-left: 0;
 }
 
 #thiccMargin {
@@ -595,4 +569,163 @@ Classes for the sponsor section
   border-right: 0rem solid black;
   border-bottom: 0rem solid black;
   border-left: 0rem solid black;
+}
+
+#bottom-bar {
+  background-color: #C2DF87;
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 6vh;
+}
+
+#bottom-container {
+  width: 65vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#bottom-name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  /* height: 30vh; */
+}
+
+#bottom-name-text {
+  font-family: 'Shrikhand', cursive;
+  font-size: 7vw;
+  vertical-align: middle;
+}
+
+#bottom-date {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#bottom-date-text {
+  font-size: 3vw;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#bottom-be-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#be-logo {
+  display: flex;
+  justify-content: center;
+  width: 13%;
+}
+
+#be-logo-img {
+  height: 50%;
+  width: 50%;
+}
+
+#bottom-links {
+  width: 12%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-links-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+@media (max-width: 870px) {
+  h3 {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: .6rem;
+  }
+}
+
+@media (max-width: 40rem) {
+
+  p {
+    /* margin-top: 0; */
+    font-size: 2vw;
+  }
+
+  .link-title-text-time {
+    margin-bottom: 2vh;
+    font-size: 3vw;
+  }
+
+  .link-title-text-time-2 {
+    margin-bottom: 2vh;
+    font-size: 3vw;
+  }
+
+
+  .container {
+    width: 80vw;
+  }
+
+  .container-plain {
+    width: 80vw;
+  }
+
+/* schedule: Monica's section */
+  .container-plain-schedule {
+    width: 40vw;
+  }
+
+  #title-date-text {
+    margin: 2rem 0;
+  }
+
+  #title-sub-title {
+    font-size: 4vw;
+  }
+
+  #last-year-text {
+    font-size: 1.7vw;
+  }
+
+  #star-background {
+    width: 32%;
+    height: 32%;
+  }
+
+  .link-item {
+    margin: 2rem 0;
+  }
+
+  .link-title-text {
+    font-size: 4vw;
+  }
+
+  .section-title-text {
+    font-size: 4vw;
+  }
+
+  .winner-name {
+    font-size: 2.3vw;
+  }
+
+  .q-box-question {
+    font-size: 3vw;
+  }
+
 }
