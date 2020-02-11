@@ -131,7 +131,7 @@ h4 {
   height: 30%;
   position: absolute;
   top: 5vh;
-  right: -23vh;
+  right: -30%;
 }
 
 #bike-img-box {
@@ -139,8 +139,8 @@ h4 {
   width: 35%;
   height: 50%;
   position: absolute;
-  top: 45vh;
-  right: -10vh;
+  top: 60%;
+  right: -15%;
 }
 
 #envision-img-box {
@@ -171,8 +171,10 @@ h4 {
 #envision-img {
   position: absolute;
   transform: rotate(20deg);
-  left: 2vh;
-  top: 2vh;
+  /* left: 2vh; */
+  /* top: 2vh; */
+  left: 5%;
+  top: 5%;
   width: 100%;
   height: 100%;
 }
@@ -270,8 +272,8 @@ Creates a rectangular container for the boxes
 
 /* schedule: Monica's section */
 .container-plain-schedule {
-  width: 32.5vw;
-  height: 66vh;
+  width: 100%;
+  height: 84%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -302,9 +304,9 @@ Creates a rectangular container for the boxes
   border-bottom: 0.25rem solid black;*/
   /*border-top: 0.25rem solid black;
   border-bottom: 0.25rem solid black;*/
-  
+
   flex-direction: column;
-  
+
   display: flex;
 }
 
