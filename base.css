@@ -519,7 +519,7 @@ Classes for the sponsor section
   background: linear-gradient(to right, #85AAB2 100%, white 100%);
   border: 0rem solid white;
   /* overflow: visible; */
-  display: flex;
+  /* display: flex; */
 }
 
 .earImage {
@@ -528,7 +528,7 @@ Classes for the sponsor section
   width: 16.65%;
   left: 6.4%;
   top: 21%;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   border: 0rem solid white;
   background-image: url(e4.png);
