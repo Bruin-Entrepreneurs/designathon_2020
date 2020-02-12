@@ -70,7 +70,7 @@ h4 {
 
 #title-text {
   font-family: 'Shrikhand', cursive;
-  font-size: 6.7vw;
+  font-size: 6vw;
   text-align: center;
   margin: -5vh 0;
   font-weight: 100;
@@ -233,14 +233,14 @@ h4 {
   .link-title-text-time {
     text-align: right;
     font-style: bold;
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin: auto auto;
   }
 
   .link-title-text-time-2 {
     text-align: left;
     font-style: bold;
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin: auto auto;
   }
 
@@ -575,7 +575,7 @@ Classes for the sponsor section
   background-color: #C2DF87;
   width: 100%;
   height: 20vh;
-  margin-bottom: 6vh;
+  /* margin-bottom: 6vh; */
 }
 
 #bottom-container {
@@ -601,6 +601,8 @@ Classes for the sponsor section
   font-family: 'Shrikhand', cursive;
   font-size: 7vw;
   vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #bottom-date {
