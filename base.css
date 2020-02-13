@@ -50,9 +50,17 @@ h4 {
 
 }
 
+#nav-logo {
+  height: 75%;
+}
+
 .nav-link {
   height: 100%;
   padding-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 
 }
 
@@ -65,19 +73,22 @@ h4 {
 }
 
 #title-text-box {
-    margin: auto;
+    /* margin: auto; */
 }
 
 #title-text {
   font-family: 'Shrikhand', cursive;
   font-size: 6vw;
   text-align: center;
-  margin: -5vh 0;
+  margin: 0;
+  /* margin: -5vh 0; */
   font-weight: 100;
 }
 
 #title-left-upper {
     border-right: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 /* schedule: Monica's section */
@@ -89,11 +100,21 @@ h4 {
   font-family: 'Nunito', sans-serif;
   font-weight: normal;
   font-size: 3vw;
-  margin: 1rem 0;
+  margin: 0;
+  margin-top: -8%;
+  /* margin: 1rem 0; */
   /* margin: auto 0; */
 }
 
+.squeezed {
+  width: 90%;
+  margin: 0 auto;
+}
+
 #title-sub-title {
+    margin-top: 6%;
+    margin-bottom: 0;
+
     font-style: bold;
     font-size: 2vw;
     text-align: left;
@@ -147,15 +168,23 @@ h4 {
   top: 15vh;
   right: -5vh;
 }
-
+/* last-year-text */
 #hand-img-box {
   background: #A90F65;
-  width: 70%;
+  width: 60%;
   height: 30%;
   position: absolute;
   top: 5vh;
-  right: -30%;
-  overflow-x: hidden;
+  right: -20%;
+  /* overflow-x: hidden; */
+}
+
+#hand-img {
+  position: absolute;
+  left: 2vh;
+  top: 2vh;
+  width: 100%;
+  height: 100%;
 }
 
 #bike-img-box {
@@ -393,7 +422,7 @@ Creates a rectangular container for the boxes
 
 
 
-#last-year-text {
+.box-text {
   margin: auto 4%;
 }
 
@@ -430,7 +459,9 @@ Creates a rectangular container for the boxes
 
 #last-year-winners-box {
     height: 50%;
-    width: 90%
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .winner-box {
@@ -445,16 +476,25 @@ Creates a rectangular container for the boxes
     font-size: 1.3vw;
 }
 
+#q-a {
+  justify-content: space-between;
+}
+
 .q-box {
     margin: 0% 5%;
     width: 90%;
-    height: 30%;
+    height: 33%;
 }
 
 .q-box-question {
   font-size: 1.3vw;
   /* margin-top: auto; */
   margin-bottom: .5rem;
+}
+
+.q-box-answer {
+  margin-top: 0;
+  width: 80%;
 }
 
 
@@ -623,6 +663,7 @@ Classes for the sponsor section
 #bottom-be-text {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.2vw;
 }
 
 #be-logo {
