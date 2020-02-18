@@ -436,8 +436,12 @@ Creates a rectangular container for the boxes
   width: 35%;
   height: 50%;
   position: absolute;
+  /*
   top: 43vh;
   right: 10vh;
+  */
+  top: 55%;
+  right: 8%;
 }
 
 .ear-box {
@@ -450,8 +454,12 @@ Creates a rectangular container for the boxes
   width: 25%;
   height: 45%;
   position: absolute;
+  /*
   top: 8vh;
   left: -20vh;
+  */
+  top: 10%;
+  left: -18%;
 }
 
 #star-background {
