@@ -680,6 +680,23 @@ Classes for the sponsor section
   margin-left: 1rem;
 }
 
+@media (max-width: 1050px) {
+  #dog-img-box {
+    width: 45%;
+    height: 40%;
+    top: 55%;
+    right: 0%;
+  }
+
+
+  #ear-img-box {
+    width: 33%;
+    height: 45%;
+    top: 10%;
+    left: -20%;
+  }
+}
+
 @media (max-width: 870px) {
   h3 {
     font-size: .8rem;
@@ -758,6 +775,21 @@ Classes for the sponsor section
 
   .q-box-question {
     font-size: 3vw;
+  }
+
+  #dog-img-box {
+    width: 43%;
+    height: 35%;
+    top: 60%;
+    right: 0%;
+  }
+
+
+  #ear-img-box {
+    width: 32%;
+    height: 38%;
+    top: 10%;
+    left: -10%;
   }
 
 }
