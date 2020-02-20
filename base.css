@@ -51,7 +51,7 @@ h4 {
 }
 
 #nav-logo {
-  height: 75%;
+  height: 70%;
 }
 
 .nav-link {
@@ -166,7 +166,7 @@ h4 {
   height: 70%;
   position: absolute;
   top: 15vh;
-  right: -5vh;
+  right: -6vw;
 }
 /* last-year-text */
 #hand-img-box {
