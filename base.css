@@ -470,15 +470,15 @@ Creates a rectangular container for the boxes
 
 #sponsor-img-box {
   background: white;
-  width: 50%;
-  height: 100%;
+  width: 44%;
+  height: 28%;
   position: absolute;
   /*
   top: 8vh;
   left: -20vh;
   */
-  top: 0%;
-  left: 0%;
+  top: 1%;
+  left: 5%;
 }
 
 #star-background {
