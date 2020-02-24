@@ -681,6 +681,35 @@ Classes for the sponsor section
   margin-left: 1rem;
 }
 
+  /* sponsors */
+.container-sponsors {
+  width: 65vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border-left: 0.125rem solid black; */
+  /* border-top: 0.125rem solid black; */
+  border: 0.25rem solid black;
+  /* background-color: white; */
+  flex-direction: row;
+}
+
+.s-box {
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 50%;
+    height: 8vw;
+}
+
+.s-box-description {
+  margin-top: 2.5%;
+  font-size: 1.3vw;
+  margin-left: 20%;
+}
+/* sponsors */
+
 @media (max-width: 1050px) {
   #dog-img-box {
     width: 45%;
@@ -793,4 +822,45 @@ Classes for the sponsor section
     left: -10%;
   }
 
+  /*sponsors*/
+  .container-sponsors {
+    width: 80vw;
+  }
+
+  .s-box-description {
+    font-size: 1.3vw;
+    margin-bottom: .5rem;
+    margin-left: 10%;
+  }
+
+  .s-box {
+    margin: 10% 10%;
+    width: 50%;
+    height: 10%;
+  }
+  /*sponsors*/
+
+}
+
+
+
+@media (min-width: 62rem) {
+  /*sponsors*/
+  .container-sponsors {
+    width: 65vw;
+  }
+
+  .s-box-description {
+    font-size: 1vw;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 10%;
+  }
+
+  .s-box {
+    margin: 10% 10%;
+    width: 6vw;
+    height: 6vw;
+  }
+  /*sponsors*/
 }
