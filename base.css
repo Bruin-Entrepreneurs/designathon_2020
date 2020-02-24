@@ -449,6 +449,11 @@ Creates a rectangular container for the boxes
     height: 100%;
 }
 
+.sponsor-box {
+    margin-left: 0vw;
+    height: 100%;
+}
+
 #ear-img-box {
   background: #85AAB2;
   width: 25%;
@@ -460,6 +465,19 @@ Creates a rectangular container for the boxes
   */
   top: 10%;
   left: -18%;
+}
+
+#sponsor-img-box {
+  background: white;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  /*
+  top: 8vh;
+  left: -20vh;
+  */
+  top: 0%;
+  left: 0%;
 }
 
 #star-background {
