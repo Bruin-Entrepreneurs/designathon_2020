@@ -470,15 +470,15 @@ Creates a rectangular container for the boxes
 
 #sponsor-img-box {
   background: white;
-  width: 44%;
-  height: 28%;
+  width: 30%;
+  height: 19%;
   position: absolute;
   /*
   top: 8vh;
   left: -20vh;
   */
   top: 1%;
-  left: 5%;
+  left: 12.5%;
 }
 
 #star-background {
@@ -743,7 +743,15 @@ Classes for the sponsor section
     top: 10%;
     left: -20%;
   }
+
+  #sponsor-img-box {
+    width: 30%;
+    height: 14%;
+    top: 3%;
+    left: 15%;
+  }
 }
+
 
 @media (max-width: 870px) {
   h3 {
@@ -754,6 +762,12 @@ Classes for the sponsor section
 @media (max-width: 600px) {
   h3 {
     font-size: .6rem;
+  }
+  #sponsor-img-box {
+    width: 27%;
+    height: 10%;
+    top: 0.5%;
+    left: 18.5%;
   }
 }
 
