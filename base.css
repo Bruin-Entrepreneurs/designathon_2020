@@ -113,6 +113,8 @@ h4 {
 
 .squeezed {
   width: 90%;
+  height: 45%;
+  /* height: 20vh; */
   margin: 0 auto;
 }
 
@@ -126,8 +128,9 @@ h4 {
 }
 
 .title-sub-text {
-    text-align: left;
-    margin-left: .5vw;
+  font-size: 70%;
+  text-align: left;
+  /* margin-left: .5vw; */
 }
 
 .section-title {
@@ -821,6 +824,12 @@ Classes for the sponsor section
 
   #title-sub-title {
     font-size: 4vw;
+  }
+
+  .title-sub-text {
+    font-size: 50%;
+    text-align: left;
+    /* margin-left: .5vw; */
   }
 
   #last-year-text {
