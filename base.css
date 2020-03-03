@@ -805,10 +805,11 @@ Classes for the sponsor section
   .container {
     width: 80vw;
   }
-
+/*
   .container-plain {
     width: 80vw;
   }
+  */
 
 /* schedule: Monica's section */
   .container-plain-schedule {

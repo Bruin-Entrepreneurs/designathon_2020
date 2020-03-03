@@ -1,15 +1,16 @@
+/*
 var acc = document.getElementsByClassName("accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
 	acc[i].addEventListener("click", function() {
 
-		this.classList.toggle("active"); 
-		var panel = this.nextElementSibling; 
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 	}); 
+    } 	});
 }
 
 
@@ -21,7 +22,7 @@ function handler_create ( ) {
     var i = $(this).index();
     console.log(i);
     $(".schedule_content_div").css('display', 'none');
-    $(".schedule_content_div").eq(i).css('display', 'block');
+    $(".schedule_content_div").eq(i).css('display', 'block');*/
 //     var next_div = third_acc[param]
 //     if (next_div.style.display == 'none') {
 //       next_div.style.display = '';
@@ -51,8 +52,8 @@ function handler_create ( ) {
 // for (k = 0; k < second_acc.length; k++) {
 //   second_acc[k].addEventListener("mouseover", handler_create(k))
 //   // second_acc[k].addEventListener("mouseleave", handler_create(k))
-}
 
+/*
 
 $(window).ready(function() {
   $("#about").css("opacity", 0.2);
@@ -85,3 +86,51 @@ $(window).scroll(function(){
       $("#about").css("opacity", 1);
     }
   });
+
+*/
+
+
+
+
+
+
+
+/*
+
+function rescale() {
+
+	var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+	var widthScale = (w/screen.width);
+	var heightScale = (document.body.clientHeight/screen.height);
+	var containerPlain = document.getElementsByClassName("container-plain")[0];
+	console.log(containerPlain.offsetWidth, "New width");
+	console.log(document.body.clientHeight, "New Height");
+	containerPlain.offsetWidth *= heightScale;
+	document.body.clientHeight *= widthScale;
+
+}
+
+window.addEventListener("resize", rescale);
+
+*/
+
+
+
+
+
+
+
+/*
+var heightScale = window.innerHeight/screen.heightscale;
+
+console.log(window.innerWidth);
+console.log("------");
+console.log($(document).width())
+console.log(screen.width);
+console.log("------")
+console.log(containerPlain.style.width)
+console.log(w, "New width_1");
+console.log(h, "New Height_1");
+*/
