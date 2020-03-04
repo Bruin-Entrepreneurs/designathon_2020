@@ -128,7 +128,7 @@ h4 {
 }
 
 .title-sub-text {
-  font-size: 70%;
+  font-size: 80%;
   text-align: left;
   /* margin-left: .5vw; */
 }
@@ -439,6 +439,14 @@ Creates a rectangular container for the boxes
     height: 70%;
 }
 
+#dog-img {
+  position: absolute;
+  left: 2vh;
+  top: 2vh;
+  width: 100%;
+  height: 100%;
+}
+
 #dog-img-box {
   background: #C2DF87;
   width: 35%;
@@ -458,8 +466,11 @@ Creates a rectangular container for the boxes
 }
 
 .sponsor-box {
-    margin-left: 0vw;
-    height: 100%;
+  display: flex;
+  margin-left: 0vw;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 }
 
 #ear-img-box {
@@ -477,15 +488,15 @@ Creates a rectangular container for the boxes
 
 #sponsor-img-box {
   background: white;
-  width: 30%;
-  height: 19%;
-  position: absolute;
+  width: 50%;
+  height: 20%;
+  /* position: absolute; */
   /*
   top: 8vh;
   left: -20vh;
   */
-  top: 1%;
-  left: 12.5%;
+  /* top: 1%; */
+  /* left: 12.5%; */
 }
 
 #star-background {
@@ -735,6 +746,14 @@ Classes for the sponsor section
 }
 /* sponsors */
 
+#fivehun-img {
+  /* position: absolute; */
+  /* left: 2vh; */
+  /* top: 2vh; */
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1050px) {
   #dog-img-box {
     width: 45%;
@@ -751,12 +770,12 @@ Classes for the sponsor section
     left: -20%;
   }
 
-  #sponsor-img-box {
+  /* #sponsor-img-box {
     width: 30%;
     height: 14%;
     top: 3%;
     left: 15%;
-  }
+  } */
 }
 
 
@@ -767,27 +786,28 @@ Classes for the sponsor section
 }
 
 @media (max-width: 780px) {
-  #sponsor-img-box {
+  /* #sponsor-img-box {
     width: 27%;
     height: 10%;
     top: 0.8%;
     left: 19%;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
   h3 {
     font-size: .6rem;
   }
-  #sponsor-img-box {
+  /* #sponsor-img-box {
     width: 27%;
     height: 10%;
     top: 0.5%;
     left: 18.5%;
-  }
+  } */
 }
 
 @media (max-width: 40rem) {
+
 
   p {
     /* margin-top: 0; */
@@ -862,6 +882,35 @@ Classes for the sponsor section
     font-size: 3vw;
   }
 
+  #foot-img-box {
+    width: 0;
+    height: 0;
+  }
+
+  #foot-img {
+    width: 0;
+    height: 0;
+  }
+
+  .ear-box {
+    width: 0;
+    height: 0;
+  }
+
+  #ear-img-box {
+    width: 0;
+    height: 0;
+  }
+
+  #hand-img-box {
+    width: 45%;
+    right: -4vw;
+  }
+
+  #bike-img-box {
+    right: -2vw;
+  }
+
   #dog-img-box {
     width: 43%;
     height: 35%;
@@ -870,12 +919,12 @@ Classes for the sponsor section
   }
 
 
-  #ear-img-box {
+  /* #ear-img-box {
     width: 32%;
     height: 38%;
     top: 10%;
     left: -10%;
-  }
+  } */
 
   /*sponsors*/
   .container-sponsors {
